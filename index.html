@@ -7,7 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
-    <link href="https://unpkg.com/tailwindcss@^2.0/dist/tailwind.min.css" rel="stylesheet">
+    <link href="output.css" rel="stylesheet">
     <link rel="shortcut icon" href="https://www.youtube.com/s/desktop/1c192ebe/img/favicon.ico" type="image/x-icon">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <title>Youtube-clone</title>
@@ -17,8 +17,8 @@
         }
     </style>
 </head>
-<body class="overflow-x-hidden w-full">
-    <header class="flex justify-between w-full items-center h-14 p-4 fixed bg-white">
+<body class="overflow-x-hidden w-screen ">
+    <header class="flex justify-between w-full items-center h-14 p-4 sticky top-0 bg-white">
             <div class="flex justify-around items-center">
                 <button onclick="menu()"><i class="material-icons mr-5 cursor-pointer">menu</i></button>
                 <img src="images/logo.png" alt="youtube logo" class="cursor-pointer">
@@ -39,37 +39,37 @@
                 <span class="material-icons cursor-pointer">account_circle</span>
             </div>
     </header>
-    <div class="body flex">
-    <section class="sidebar w-60 fixed top-14 h-full flex flex-col items-center ">
-        <p class="bg-gray-200 h-10 w-full flex items-center justify-start cursor-pointer text-sm"><i class="material-icons px-6">home</i>Accueil</p>
-        <p class=" h-10 w-full flex items-center justify-start cursor-pointer text-sm"><i class="material-icons px-6">explore</i>Explore</p>
-        <p class="h-10 w-full flex items-center justify-start cursor-pointer text-sm"><i class="material-icons px-6">music_video</i>Shorts</p>
-        <p class="h-10 w-full flex items-center justify-start cursor-pointer text-sm  border-b-2"><i class="material-icons px-6">movie_filter</i>Abonnements</p>
-        <p class=" h-10 w-full flex items-center justify-start cursor-pointer text-sm"><i class="material-icons px-6">movie</i>Bibliothèque</p>
-        <p class="h-10 w-full flex items-center justify-start cursor-pointer text-sm"><i class="material-icons px-6">history</i>Historique</p>
-        <p class=" h-10 w-full flex items-center justify-start cursor-pointer text-sm"><i class="material-icons px-6">slideshow</i>Vos vidéos</p>
-        <p class="h-10 w-full flex items-center justify-start cursor-pointer text-sm"><i class="material-icons px-6">watch_later</i>À regarder plus tard</p>
-        <p class="h-10 w-full flex items-center justify-start cursor-pointer text-sm  border-b-2"><i class="material-icons px-6">thumb_up_off_alt</i>Vidéos "J'aime"</p>
-
-    </section>
-    <div class="content w-full ">
-        <div class="filtrer bg-white fixed top-14 left-60 ml-6 h-16 w-full border-b-2 border-t-2 flex items-center justify-self-start">
-            <button class="bg-gray-900 text-white px-2 py-1 rounded-2xl mx-1.5 h-8">Tous</button>
-            <button class="bg-gray-200 px-2 py-1 rounded-2xl border border-gray-400 mx-1.5 h-8">Mix</button>
-            <button class="bg-gray-200 px-2 py-1 rounded-2xl border border-gray-400 mx-1.5 h-8">En direct</button>
-            <button class="bg-gray-200 px-2 py-1 rounded-2xl border border-gray-400 mx-1.5 h-8">Javascript</button>
-            <button class="bg-gray-200 px-2 py-1 rounded-2xl border border-gray-400 mx-1.5 h-8">Python</button>
-            <button class="bg-gray-200 px-2 py-1 rounded-2xl border border-gray-400 mx-1.5 h-8">Tailwind</button>
-            <button class="bg-gray-200 px-2 py-1 rounded-2xl border border-gray-400 mx-1.5 h-8">Full stack developper </button>
-            <button class="bg-gray-200 px-2 py-1 rounded-2xl border border-gray-400 mx-1.5 h-8">Css</button>
-            <button class="bg-gray-200 px-2 py-1 rounded-2xl border border-gray-400 mx-1.5 h-8">Js</button>
-            <button class="bg-gray-200 px-2 py-1 rounded-2xl border border-gray-400 mx-1.5 h-8">Backend</button>
-            <button class="bg-gray-200 px-2 py-1 rounded-2xl border border-gray-400 mx-1.5 h-8">Django</button>
-            <button class="bg-gray-200 px-2 py-1 rounded-2xl border border-gray-400 mx-1.5 h-8">Dark web</button>
-            <button class="bg-gray-200 px-2 py-1 rounded-2xl border border-gray-400 mx-1.5 h-8">github</button>
-            <button class="bg-gray-200 px-2 py-1 rounded-2xl border border-gray-400 mx-1.5 h-8">learn git and github</button>
-        </div>
-        <div class="feed p-6 flex flex-col justify-between mt-32 ml-60 overflow-hidden">
+    <div class="filtrer bg-white sticky top-14 ml-60 w-screen h-16 border-b-2 border-t-2 flex items-center justify-self-start">
+        <button class="bg-gray-900 text-white px-2 py-1 rounded-2xl mx-1.5 h-8 w-fit  truncate">Tous</button>
+        <button class="bg-gray-200 px-2 py-1 rounded-2xl border border-gray-400 mx-1.5 h-8 w-fit  truncate">Mix</button>
+        <button class="bg-gray-200 px-2 py-1 rounded-2xl border border-gray-400 mx-1.5 h-8 w-fit  truncate">En direct</button>
+        <button class="bg-gray-200 px-2 py-1 rounded-2xl border border-gray-400 mx-1.5 h-8 w-fit  truncate">Javascript</button>
+        <button class="bg-gray-200 px-2 py-1 rounded-2xl border border-gray-400 mx-1.5 h-8 w-fit  truncate">Python</button>
+        <button class="bg-gray-200 px-2 py-1 rounded-2xl border border-gray-400 mx-1.5 h-8 w-fit  truncate">Tailwind</button>
+        <button class="bg-gray-200 px-2 py-1 rounded-2xl border border-gray-400 mx-1.5 h-8 w-fit  truncate">Full stack developper </button>
+        <button class="bg-gray-200 px-2 py-1 rounded-2xl border border-gray-400 mx-1.5 h-8 w-fit  truncate">Css</button>
+        <button class="bg-gray-200 px-2 py-1 rounded-2xl border border-gray-400 mx-1.5 h-8 w-fit  truncate">Js</button>
+        <button class="bg-gray-200 px-2 py-1 rounded-2xl border border-gray-400 mx-1.5 h-8 w-fit  truncate">Backend</button>
+        <button class="bg-gray-200 px-2 py-1 rounded-2xl border border-gray-400 mx-1.5 h-8 w-fit  truncate">Django</button>
+        <button class="bg-gray-200 px-2 py-1 rounded-2xl border border-gray-400 mx-1.5 h-8 w-fit  truncate">Dark web</button>
+        <button class="bg-gray-200 px-2 py-1 rounded-2xl border border-gray-400 mx-1.5 h-8 w-fit  truncate">github</button>
+        <button class="bg-gray-200 px-2 py-1 rounded-2xl border border-gray-400 mx-1.5 h-8 w-fit  truncate">learn git and github</button>
+    </div>
+    
+    
+    <div class="content w-full flex">
+        <section class="sidebar w-60 sticky top-14 -mt-16 bg-white h-full flex flex-col items-center ">
+            <p class="bg-gray-200 h-10 mx-20 w-full flex items-center justify-start cursor-pointer text-sm"><i class="material-icons px-6">home</i>Accueil</p>
+            <p class="hover:bg-gray-100  h-10 w-full flex items-center justify-start cursor-pointer text-sm"><i class="material-icons px-6">explore</i>Explore</p>
+            <p class="hover:bg-gray-100 h-10 w-full flex items-center justify-start cursor-pointer text-sm"><i class="material-icons px-6">music_video</i>Shorts</p>
+            <p class="hover:bg-gray-100 h-10 w-full flex items-center justify-start cursor-pointer text-sm  border-b-2"><i class="material-icons px-6">movie_filter</i>Abonnements</p>
+            <p class="hover:bg-gray-100  h-10 w-full flex items-center justify-start cursor-pointer text-sm"><i class="material-icons px-6">movie</i>Bibliothèque</p>
+            <p class="hover:bg-gray-100 h-10 w-full flex items-center justify-start cursor-pointer text-sm"><i class="material-icons px-6">history</i>Historique</p>
+            <p class="hover:bg-gray-100  h-10 w-full flex items-center justify-start cursor-pointer text-sm"><i class="material-icons px-6">slideshow</i>Vos vidéos</p>
+            <p class="hover:bg-gray-100 h-10 w-full flex items-center justify-start cursor-pointer text-sm"><i class="material-icons px-6">watch_later</i>À regarder plus tard</p>
+            <p class="hover:bg-gray-100 h-10 w-full flex items-center justify-start cursor-pointer text-sm  border-b-2"><i class="material-icons px-6">thumb_up_off_alt</i>Vidéos "J'aime"</p>
+        </section>
+        <div class="feed p-6 flex  flex-col justify-between overflow-hidden">
             <div class="row w-full flex">
                 <div class="vedeo-preview w-1\/4 h-60 mx-3">
                     <img class="w-full" src="https://i.ytimg.com/vi/-I0SCL8R2FU/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLApGPdHCjb3UfamZdOfqgTQvRUH9A" alt="">
@@ -317,8 +317,7 @@
     function menu() {
         if (sideshow) {
             sidebar[0].style.width ="72px"
-            filtrer[0].style.left = "72px"
-            feed[0].style.marginLeft = "72px"
+            filtrer[0].style.marginLeft ="72px"
             i=0
             Array.from(sidebarelem).forEach(e => {
                 e.classList.remove('text-sm')
@@ -333,8 +332,7 @@
             sideshow = false
         } else {
             sidebar[0].style.width ="240px"
-            filtrer[0].style.left = "240px"
-            feed[0].style.marginLeft = "240px"
+            filtrer[0].style.marginLeft ="240px"
             i=0
             Array.from(sidebarelem).forEach(e => {
                 e.classList.remove('text-xs')
